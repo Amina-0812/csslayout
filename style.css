@@ -1,0 +1,327 @@
+/*adding the "*" so we can control the main document*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.group{
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+    background-size: cover;
+    background-position: center;
+}
+
+/*using the display flex*/
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 160px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #00b39b;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /*everytime we put the mouse on the navbar, there's a lign that shows up in 0.5 seconds */
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.main-1 {
+    width: 100%;
+    /*element will be positioned relative to the closest positioned ancestor*/
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: #00b39b;
+}
+
+.main-1 h1{
+    font-size: 60px;
+    margin-top: 40px;
+    color: #00b39b;
+}
+
+.main-1 p{
+    margin: 20px;
+    font-weight: 100;
+    line-height: 25px ;
+    color: #747474;
+}
+
+.grid-1{
+   display: grid;
+   margin: 20px;
+}
+
+.grid-1 h1{
+    display: block;
+    background: #00b39b;
+    font-size: 1.62em;
+    color: #fff;
+    margin-top: 0.3em;
+    margin-right: 0px;
+    margin-bottom: 0.3em;
+    margin-left: 0px;
+}
+
+.grid-1 h2{
+    color: #747474;
+}
+
+.grid-2{
+    margin: 20px;
+}
+
+.grid-2 h1{
+    display: block;
+    background: #00b39b;
+    color: #fff;
+    font-size: 1.62em;
+    margin-top: 1px;
+    margin-right: 0px;
+    margin-bottom: 0.3em;
+    margin-left: 2px;
+}
+
+.grid-2 h2{
+    color: #747474;
+}
+
+.grid-3{
+    margin: 20px;
+}
+.grid-3 h1{
+    display: block;
+    background: #00b39b;
+    font-size: 1.62em;
+    color: #fff;
+    margin-top: 0.3em;
+    margin-right: 0px;
+    margin-bottom: 0.3em;
+    margin-left: 0px;
+}
+
+.grid-3 h2{
+    color: #747474;
+}
+.brands__logos {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0;
+    list-style: none;
+    list-style-type: disc;
+    width: 67%;
+    font-size: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+}
+
+
+.brands__logos a {
+        font-weight: 400;
+        font-family: Roboto,Arial,sans-serif;
+        color: #747474;
+        list-style-type: disc;
+        font-size: 10px;
+    
+}
+
+
+
+.section{
+    float: left;
+    width: 33.33%;
+    margin: 0.25em 0 0.35em;
+    padding-right: 1em;
+    color: #00b39b;
+}
+.section h1{
+    width: 30%;
+    margin: 15px;
+    /*using Roboto*/
+    font-family:Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.62em;
+    color: #00b39b;
+    float: left;
+}
+
+.c1 h1{
+    display: grid;
+    font-size: 30px;
+    background-color: #00b39b;
+    color: #fff;
+}
+
+.c1 h3 {
+    color: #747474;
+    font-family: roboto, arial, sans-serif;
+}
+
+.col-2 {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    box-sizing: inherit;
+    display: block;
+    min-height: 1px;
+    padding: 10px;
+    width: 50%;
+    margin-top: 2em;
+}
+
+.col-2 h1{
+    line-height: 1.3;
+    box-sizing: inherit;
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    font-size: 2.125rem;
+    color: #00b39b;
+    margin: 0;
+}
+
+.col-2 p{
+    margin-left: 100px;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    max-width: 415px;
+    font-size: .875em;
+    font-weight: 400;
+}
+
+
+.elements{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    display: block;
+    padding: 10px;
+    width: 50%;
+    margin-top: 2em;
+}
+
+.elements h1{
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 2.125rem;
+    color: #00b39b;
+    margin: 0;
+}
+
+.element p {
+    margin-left: 460px;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    max-width: 415px;
+    font-size: .875em;
+    font-weight: 400;
+
+}
+
+
+.up {
+    display: grid;
+    margin: 20px;
+}
+
+.up h1{
+    display: block;
+    background: #00b39b;
+    font-size: 1.62em;
+    color: #fff;
+    margin-top: 0.3em;
+    margin-right: 0px;
+    margin-bottom: 0.3em;
+    margin-left: 0px;
+}
+
+
+.cities{
+    padding: 10px;
+}
+
+.war {
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.6667;
+    padding: 1.1em;
+}
+
+.join{
+        max-width: 520px;
+        margin: 0 auto;
+        font-size: .875em;
+        text-align: center;
+}
+
+.join h1{
+    font-size: 2.1428571429em;
+    color: #333;
+    margin-bottom: 0.75em;
+}
+
+.btn{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding: 1.1667em 1.5em;
+    background: #3d83df;
+    font-family: Roboto,Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    font-size: .75rem;
+    text-align: center;
+}
+
+
+.last{
+    border-top: 1px solid #eef2f2;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 12px;
+    color: #ababab;
+}
+
+
+
